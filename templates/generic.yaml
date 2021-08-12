@@ -9,7 +9,7 @@ projects:
         configs:
           - slug: 'dev' # First slug *must* match environment slug name
 
-      - name: 'CD-CD'
+      - name: 'CI-CD'
         slug: 'ci-cd'
         configs:
           - slug: 'ci-cd'
