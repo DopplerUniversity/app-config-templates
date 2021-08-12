@@ -1,0 +1,45 @@
+projects:
+  - name: 'your-project' # Name may contain lowercase letters, spaces, numbers, hyphens, and underscores
+    description: 'Your project description'
+
+    # List of totally customizable environments, e.g Test, Stage, QA, CI-CD
+    environments:
+      - name: 'Development' # Name may contain letters, spaces, numbers, hyphens, and underscores
+        slug: 'dev' # Slug may contain letters, numbers, hyphens, and underscores
+        configs:
+          - slug: 'dev' # First slug *must* match environment slug name
+
+      - name: 'CD-CD'
+        slug: 'ci-cd'
+        configs:
+          - slug: 'ci-cd'
+          - slug: 'ci-cd_github' # Branch configs supported
+          - slug: 'ci-cd_gitlab'
+
+      - name: 'Test'
+        slug: 'test'
+        configs:
+          - slug: 'test'
+
+      - name: 'Production'
+        slug: 'prd'
+        configs:
+          - slug: 'prd'
+
+    # Define secrets for each environment
+    secrets:
+      dev:
+        ENV: 'development'
+        API_KEY: ''
+
+      ci-cd:
+        DOCKER_HUB_USERNAME: ''
+        DOCKER_HUB_TOKEN: ''
+
+      test:
+        ENV: 'development'
+        API_KEY: ''
+
+      prd:
+        ENV: 'production'
+        API_KEY: ''
