@@ -7,7 +7,7 @@ A list of sample [Doppler Project Templates](https://docs.doppler.com/docs/proje
 [Template source](templates/generic.yaml)
 
 <a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fapp-config-templates%2Fblob%2Fmain%2Ftemplates%2Fgeneric.yaml"/>
-    <img src="https://raw.githubusercontent.com/DopplerHQ/app-config-templates/main/import-to-doppler.png" width="166" height="32" alt="Import to Doppler" />
+    <img src="https://raw.githubusercontent.com/DopplerHQ/app-config-templates/main/doppler-button.svg" alt="Import to Doppler" />
 </a>
 
 ## Contributing
