@@ -1,0 +1,216 @@
+projects:
+  - name: 'mongodb-tls'
+    description: 'Manage PEM certificates for MongoDB TLS connections'
+    environments:
+      - slug: 'dev'
+        name: 'Development'
+        configs:
+          - slug: 'dev'
+
+    secrets:
+      dev:
+        MONGO_TLS_CERT: |-
+          -----BEGIN CERTIFICATE-----
+          MIIEUTCCArmgAwIBAgIRAIQV0ugl6fvIlGKvQop34k0wDQYJKoZIhvcNAQELBQAw
+          XzEeMBwGA1UEChMVbWtjZXJ0IGRldmVsb3BtZW50IENBMRowGAYDVQQLDBFyb290
+          QDE3YTRiYjNiYzA0NTEhMB8GA1UEAwwYbWtjZXJ0IHJvb3RAMTdhNGJiM2JjMDQ1
+          MB4XDTIxMDkyMDAyNDEyNloXDTIzMTIyMDAyNDEyNlowRTEnMCUGA1UEChMebWtj
+          ZXJ0IGRldmVsb3BtZW50IGNlcnRpZmljYXRlMRowGAYDVQQLDBFyb290QDE3YTRi
+          YjNiYzA0NTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALv4rnjxo++n
+          499fB1ptagPidf7bJoFdv7oKCzY55L67FTXLPfOH+kZNTm822mQyRndheeBoihpz
+          LZV2mHsjw3kB3GmDIBIwLZQBFd0EJbTyCd6JGDJyL6wbQQxwLdBM7q035E7rMotr
+          jXBRJ8s8v3r6+CGiCM5Im7gaWoCBhsWCv0gWAWFXITH/uhIFWQWXuMgoGy21C2Cp
+          UId1kyhEgE5b6xG+5qGKloa2mTbAseKRiU647qDz+ypK2BBRBFFyBf8QmyU+ZqaN
+          EMDx+dJfGXDyG2Ns51dAjOj2G30ZKm6tJHJDIPsaZ0V5JKoaR58fiY9gewTmH2sp
+          G1NQWWrArlECAwEAAaOBoTCBnjAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYI
+          KwYBBQUHAwEwHwYDVR0jBBgwFoAU+KlDO2wcHuYmzfdeI2ZKPM9tRtowVgYDVR0R
+          BE8wTYISZG9wcGxlci51bml2ZXJzaXR5ghQqLmRvcHBsZXIudW5pdmVyc2l0eYIJ
+          bG9jYWxob3N0hwR/AAABhxAAAAAAAAAAAAAAAAAAAAABMA0GCSqGSIb3DQEBCwUA
+          A4IBgQCzEP0ScisoEsuDSWqUID3i6QVLtD5KhGeQsoRKLfJ8ftXRlBRfuEvxqTt3
+          h68TScOGNgoW8OMmuCrQjTDrnUzYnsyUV7g4YSxLnJVgfV5pBoGLFehJwphEja4b
+          jCGGCt8Y/iPEuOdLZAA937v3JhOXvoyv3JINSGKtehQUIbmQ+C6i7lheXTLkvM7n
+          1csyFGU87gnXVD8GHQhFGe5Z8ooEDhlnL8OhDBl3SqA9ZerNoaxra+5OZDsldaP2
+          gGaJdDpiWJaJMFy15RyMBcbYm2ValnLoVnKPVeKGIhU682WDp8Ak+qWXCJdHQr40
+          +MtMZPNq4ngFMgX5OmhyJySzB2nYkwPKmxALeYcxgJRkj7LEsRu4wKBu82W4jr24
+          yZOj1PocQEBckr0xIHSvHhAoy6vMAmzoEco7SDsK4Y5NlATEAvcOSsORd2pk35lD
+          UTgYrVgzymoKH9jvS7RV++gyxjURswW2n4Cj/RW3fRu7OjOnhBXXJmtViklSN0tC
+          UJm20p0=
+          -----END CERTIFICATE-----
+        MONGO_TLS_KEY: |-
+          -----BEGIN PRIVATE KEY-----
+          MIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC7+K548aPvp+Pf
+          XwdabWoD4nX+2yaBXb+6Cgs2OeS+uxU1yz3zh/pGTU5vNtpkMkZ3YXngaIoacy2V
+          dph7I8N5AdxpgyASMC2UARXdBCW08gneiRgyci+sG0EMcC3QTO6tN+RO6zKLa41w
+          USfLPL96+vghogjOSJu4GlqAgYbFgr9IFgFhVyEx/7oSBVkFl7jIKBsttQtgqVCH
+          dZMoRIBOW+sRvuahipaGtpk2wLHikYlOuO6g8/sqStgQUQRRcgX/EJslPmamjRDA
+          8fnSXxlw8htjbOdXQIzo9ht9GSpurSRyQyD7GmdFeSSqGkefH4mPYHsE5h9rKRtT
+          UFlqwK5RAgMBAAECggEAMH1ENLrQ+V+r7tFKyk7zTDE9ExNhaXnPnaQ9pC1nDrSg
+          EhJt1sa7DyueEh5qU/KMLvucPwF4rr4LgkTnrMxa/no2a5mBym9XMpjdFPie6YCO
+          fzOKZGkEVzdonlbJ2rQd1d1XLeyKS2DhSZoF0+3Fz2myXKq57szYLrPNqNzA8W4J
+          aR3LhC3du/VYjqU7XlsLy24bceDey6Du3cvSpd5cFbdxGYc0MWphP0UgE9uRNToD
+          EohIllwIXOvoB4mLf1ufsR61/yL3RcAEvjqSfqGD09vJBm1SsLkitJXgw5U05swp
+          PBUZAoW0G+6OY8Pnd27AnrvfBypT3TtUZC12GNLKaQKBgQDuuVpcazzA6HgYCLDf
+          gc79ED5AmKS2F42U8YrrBM4wJo72oL28QKXTfuB6r860jNCLV8CV5sO4B+yPnGU9
+          xwM1VVM5lSV2glxEp3J1raWQk2VVSWeyGRhi6R6VBs2qSC9UuwNQ22Zcb8kfMxSN
+          AXiSUInjmOqC99CkSR07QK5s3wKBgQDJkxNmqk8LEU3m2CZw64jcFgLD5iHbpy2Q
+          LQ8kxDNDOPq7yyihmgCstz36DInK7bTAmU7aq8Nv2dTVtgJxhExdcn5fBXAIJYit
+          W0Hnw2Nll7+jsc3Uc25X4rLj3pjm6FxQyYlUJHJ+7Ezscc8Tc7v7nUKAPO33nYuA
+          SMVcRlgazwJ/G/mcnTfz5qdXa3mZQJf1qbI9mVRJ+QzJiqrDnMbzYrEiD8TGd0kc
+          Jay4oaf4kS/vQGUILIjeZrKHBk1Nj+/CcH2PQzA3M6wTI/h7cU7oGAkt1tDDVhua
+          v/yRmOUzNMFAyq0ftln/pNV0vDNANUX22y6U+hbxZGemC5qF0mvCBQKBgDQFGb+n
+          +gggKhuF8r23ezVZFNObg2ddSHvptPvHCnexr7thHZY+2Se5jmwGalUNbVU6+0eh
+          hilKbQvOEelbvB1tm8FH9PaVQSWD5Ik8Ol2QgOtsynKma3aQ0ZvO6WTF2HUc3azy
+          Tv4EW4G1iTw65Ot1VSElGECLzuGHZi9/E+OvAoGAK6ZNc5ifZ7ovRksUR/H2dFDU
+          kld7iZAP/6ixlm5JYQC/d3/FrjaqSvScWmnlZ+wm9exafTYQBvL66Hq0bUD44cse
+          2JJW7dS4+tspbVwXjyHRv+CIxuvY1Gd08/9aHtIhidqa/WI6ALza9IGirV27SdEz
+          0CJUCioCyZDDlXBPGAc=
+          -----END PRIVATE KEY-----
+        MONGO_TLS_PEM: |-
+          -----BEGIN CERTIFICATE-----
+          MIIEUTCCArmgAwIBAgIRAIQV0ugl6fvIlGKvQop34k0wDQYJKoZIhvcNAQELBQAw
+          XzEeMBwGA1UEChMVbWtjZXJ0IGRldmVsb3BtZW50IENBMRowGAYDVQQLDBFyb290
+          QDE3YTRiYjNiYzA0NTEhMB8GA1UEAwwYbWtjZXJ0IHJvb3RAMTdhNGJiM2JjMDQ1
+          MB4XDTIxMDkyMDAyNDEyNloXDTIzMTIyMDAyNDEyNlowRTEnMCUGA1UEChMebWtj
+          ZXJ0IGRldmVsb3BtZW50IGNlcnRpZmljYXRlMRowGAYDVQQLDBFyb290QDE3YTRi
+          YjNiYzA0NTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALv4rnjxo++n
+          499fB1ptagPidf7bJoFdv7oKCzY55L67FTXLPfOH+kZNTm822mQyRndheeBoihpz
+          LZV2mHsjw3kB3GmDIBIwLZQBFd0EJbTyCd6JGDJyL6wbQQxwLdBM7q035E7rMotr
+          jXBRJ8s8v3r6+CGiCM5Im7gaWoCBhsWCv0gWAWFXITH/uhIFWQWXuMgoGy21C2Cp
+          UId1kyhEgE5b6xG+5qGKloa2mTbAseKRiU647qDz+ypK2BBRBFFyBf8QmyU+ZqaN
+          EMDx+dJfGXDyG2Ns51dAjOj2G30ZKm6tJHJDIPsaZ0V5JKoaR58fiY9gewTmH2sp
+          G1NQWWrArlECAwEAAaOBoTCBnjAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYI
+          KwYBBQUHAwEwHwYDVR0jBBgwFoAU+KlDO2wcHuYmzfdeI2ZKPM9tRtowVgYDVR0R
+          BE8wTYISZG9wcGxlci51bml2ZXJzaXR5ghQqLmRvcHBsZXIudW5pdmVyc2l0eYIJ
+          bG9jYWxob3N0hwR/AAABhxAAAAAAAAAAAAAAAAAAAAABMA0GCSqGSIb3DQEBCwUA
+          A4IBgQCzEP0ScisoEsuDSWqUID3i6QVLtD5KhGeQsoRKLfJ8ftXRlBRfuEvxqTt3
+          h68TScOGNgoW8OMmuCrQjTDrnUzYnsyUV7g4YSxLnJVgfV5pBoGLFehJwphEja4b
+          jCGGCt8Y/iPEuOdLZAA937v3JhOXvoyv3JINSGKtehQUIbmQ+C6i7lheXTLkvM7n
+          1csyFGU87gnXVD8GHQhFGe5Z8ooEDhlnL8OhDBl3SqA9ZerNoaxra+5OZDsldaP2
+          gGaJdDpiWJaJMFy15RyMBcbYm2ValnLoVnKPVeKGIhU682WDp8Ak+qWXCJdHQr40
+          +MtMZPNq4ngFMgX5OmhyJySzB2nYkwPKmxALeYcxgJRkj7LEsRu4wKBu82W4jr24
+          yZOj1PocQEBckr0xIHSvHhAoy6vMAmzoEco7SDsK4Y5NlATEAvcOSsORd2pk35lD
+          UTgYrVgzymoKH9jvS7RV++gyxjURswW2n4Cj/RW3fRu7OjOnhBXXJmtViklSN0tC
+          UJm20p0=
+          -----END CERTIFICATE-----
+          -----BEGIN PRIVATE KEY-----
+          MIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC7+K548aPvp+Pf
+          XwdabWoD4nX+2yaBXb+6Cgs2OeS+uxU1yz3zh/pGTU5vNtpkMkZ3YXngaIoacy2V
+          dph7I8N5AdxpgyASMC2UARXdBCW08gneiRgyci+sG0EMcC3QTO6tN+RO6zKLa41w
+          USfLPL96+vghogjOSJu4GlqAgYbFgr9IFgFhVyEx/7oSBVkFl7jIKBsttQtgqVCH
+          dZMoRIBOW+sRvuahipaGtpk2wLHikYlOuO6g8/sqStgQUQRRcgX/EJslPmamjRDA
+          8fnSXxlw8htjbOdXQIzo9ht9GSpurSRyQyD7GmdFeSSqGkefH4mPYHsE5h9rKRtT
+          UFlqwK5RAgMBAAECggEAMH1ENLrQ+V+r7tFKyk7zTDE9ExNhaXnPnaQ9pC1nDrSg
+          EhJt1sa7DyueEh5qU/KMLvucPwF4rr4LgkTnrMxa/no2a5mBym9XMpjdFPie6YCO
+          fzOKZGkEVzdonlbJ2rQd1d1XLeyKS2DhSZoF0+3Fz2myXKq57szYLrPNqNzA8W4J
+          aR3LhC3du/VYjqU7XlsLy24bceDey6Du3cvSpd5cFbdxGYc0MWphP0UgE9uRNToD
+          EohIllwIXOvoB4mLf1ufsR61/yL3RcAEvjqSfqGD09vJBm1SsLkitJXgw5U05swp
+          PBUZAoW0G+6OY8Pnd27AnrvfBypT3TtUZC12GNLKaQKBgQDuuVpcazzA6HgYCLDf
+          gc79ED5AmKS2F42U8YrrBM4wJo72oL28QKXTfuB6r860jNCLV8CV5sO4B+yPnGU9
+          xwM1VVM5lSV2glxEp3J1raWQk2VVSWeyGRhi6R6VBs2qSC9UuwNQ22Zcb8kfMxSN
+          AXiSUInjmOqC99CkSR07QK5s3wKBgQDJkxNmqk8LEU3m2CZw64jcFgLD5iHbpy2Q
+          LQ8kxDNDOPq7yyihmgCstz36DInK7bTAmU7aq8Nv2dTVtgJxhExdcn5fBXAIJYit
+          W0Hnw2Nll7+jsc3Uc25X4rLj3pjm6FxQyYlUJHJ+7Ezscc8Tc7v7nUKAPO33nYuA
+          SMVcRlgazwJ/G/mcnTfz5qdXa3mZQJf1qbI9mVRJ+QzJiqrDnMbzYrEiD8TGd0kc
+          Jay4oaf4kS/vQGUILIjeZrKHBk1Nj+/CcH2PQzA3M6wTI/h7cU7oGAkt1tDDVhua
+          v/yRmOUzNMFAyq0ftln/pNV0vDNANUX22y6U+hbxZGemC5qF0mvCBQKBgDQFGb+n
+          +gggKhuF8r23ezVZFNObg2ddSHvptPvHCnexr7thHZY+2Se5jmwGalUNbVU6+0eh
+          hilKbQvOEelbvB1tm8FH9PaVQSWD5Ik8Ol2QgOtsynKma3aQ0ZvO6WTF2HUc3azy
+          Tv4EW4G1iTw65Ot1VSElGECLzuGHZi9/E+OvAoGAK6ZNc5ifZ7ovRksUR/H2dFDU
+          kld7iZAP/6ixlm5JYQC/d3/FrjaqSvScWmnlZ+wm9exafTYQBvL66Hq0bUD44cse
+          2JJW7dS4+tspbVwXjyHRv+CIxuvY1Gd08/9aHtIhidqa/WI6ALza9IGirV27SdEz
+          0CJUCioCyZDDlXBPGAc=
+          -----END PRIVATE KEY-----
+        MONGOD_CONF: |-
+          #  Reference MongoDB server conf file for testing TLS
+          # doppler secrets get MONGOD_CONF --plain > /etc/mongod.conf
+          # usage: mongod --config /etc/mongod.conf
+
+          storage:
+            dbPath: /var/lib/mongodb
+            journal:
+              enabled: true
+
+          # Logging to file disabled so we can test using the mongod binary directly
+          # systemLog:
+          #   destination: file
+          #   logAppend: true
+          #   path: /var/log/mongodb/mongod.log
+
+          net:
+            port: 27017
+            bindIp: 127.0.0.1
+            tls:
+              mode: requireTLS
+              certificateKeyFile: /etc/ssl/mongo.tls.pem
+
+          processManagement:
+            timeZoneInfo: /usr/share/zoneinfo
+        ROOT_CA_CERT: |-
+          -----BEGIN CERTIFICATE-----
+          MIIEjTCCAvWgAwIBAgIQJFc/gYCTtd2DdZ0ISlhLazANBgkqhkiG9w0BAQsFADBf
+          MR4wHAYDVQQKExVta2NlcnQgZGV2ZWxvcG1lbnQgQ0ExGjAYBgNVBAsMEXJvb3RA
+          MTdhNGJiM2JjMDQ1MSEwHwYDVQQDDBhta2NlcnQgcm9vdEAxN2E0YmIzYmMwNDUw
+          HhcNMjEwOTIwMDEzNzExWhcNMzEwOTIwMDEzNzExWjBfMR4wHAYDVQQKExVta2Nl
+          cnQgZGV2ZWxvcG1lbnQgQ0ExGjAYBgNVBAsMEXJvb3RAMTdhNGJiM2JjMDQ1MSEw
+          HwYDVQQDDBhta2NlcnQgcm9vdEAxN2E0YmIzYmMwNDUwggGiMA0GCSqGSIb3DQEB
+          AQUAA4IBjwAwggGKAoIBgQDLpcIQEuXXv0c0unr/fTycu3B1p9Ja9kiOXWLVnq4b
+          PuKcCF+AWm+5eTnEvvkhl8RlSYq/q7s445Kg6Oi0oo/diu75HZaFo3j4vSYELOUn
+          Y1RT3Lc4m96/t22ObqWYjYPP4BIj034pTAMV0R6f7iRWD2PopwktB6ZDxLOiXJ/k
+          +VddrPja2nPbnUbap2ZqufthQX8Y+3hSV6LV+LNy3IL9UdelgJFt2s/0Kv0Ux/LG
+          drnuQXWI/HeUgLgW4AuTN2NiTrlwRNwtlnrN/yG4Odthe8QSYlWdANCcbCY/GKhD
+          iNhhNb/U9DAOfnX038De4kKImQaZm1jW3cK+uBURRCZEEMNALYQ2fVypt1jfeQku
+          OTD95levv3OJ0gW3v4ga73XKauJH73my/zsRULG0ZrBOOfU28wuBRFBBIwflXgl8
+          4KY68f+MUACUP87N126nlAGmC7Z65EZio693R9TqaLJaA6kftoQU1PaNTAnCzGZs
+          0aWMw+q6KQFvd+wPA5WFRzkCAwEAAaNFMEMwDgYDVR0PAQH/BAQDAgIEMBIGA1Ud
+          EwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFPipQztsHB7mJs33XiNmSjzPbUbaMA0G
+          CSqGSIb3DQEBCwUAA4IBgQBfXiUtAPhrFVRkel6aAMgdDbPdbR7cg0odd31GUCKm
+          9wMrSvesJ1t5GVygXuqgSg2HjKDb4f/5kwfj5d97BNOLTahoWcXGSR50+bFofw3M
+          4DJsHogjRs0N33OJezitZgkkohn9aqxk103sbQCoHQBWXwFRgo/Z+ePawIc3s/1F
+          8mmBWm5G1Vrggez+qycoYMoeQVCC5McvPm40EkUdf9rpz7F6IjK9elpj5V4erycs
+          cE0R5E2s3GySqIfaA0cXP8b+LY10rSN80SHNbaoaZzmJLtjuOD22M2Z+0LorVrex
+          OJ41EUYD8/64jpA5loPD9DvEKcsGfnTkVgi85O/Y6BUC1D2pjI/e/Gwv+1fzoYKq
+          Ay8TTxA6o61GzCvIq0o42SgWNcE2Jlk608Ic4YCeeUkaqke7l2KQyx9aSIUo7bdb
+          E2xPTOmSP6++IHwMAwCi2+Acgz38oi25Cl12EBq6shDM8+H2hOMFbnyXelfBSgNU
+          LSUtnGRmIUHnMtmRqW0SVZA=
+          -----END CERTIFICATE-----
+        ROOT_CA_KEY: |-
+          -----BEGIN PRIVATE KEY-----
+          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
+          j791ck1mrSTe6+HB6l/YkYk=
+          -----END PRIVATE KEY-----
