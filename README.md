@@ -1,6 +1,8 @@
-# App Config Templates
+# Doppler App Templates
 
-A list of sample [Doppler Project Templates](https://docs.doppler.com/docs/project-templates) to automatically create the required Projects, Environments, and Configs for an application.
+A list of sample [Doppler Templates](https://docs.doppler.com/docs/project-templates) to automatically create the required Projects, Environments, and Configs for an application.
+
+Contributions Welcome!
 
 ## Generic
 
